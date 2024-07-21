@@ -71,22 +71,22 @@ const AdminProductListTable = () => {
       <Table>
         <TableHeader className="bg-[#FFF7F2] ">
           <TableRow className="">
-            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-black">
               Name
             </TableHead>
-            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-black">
               Price
             </TableHead>
-            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-black">
               Total Sold
             </TableHead>
-            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 text-base font-normal font-inter leading-5 text-left text-black">
               Status
             </TableHead>
-            <TableHead className="px-2 max-md:hidden text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 max-md:hidden text-base font-normal font-inter leading-5 text-left text-black">
               Created At
             </TableHead>
-            <TableHead className="px-2 max-md:hidden text-base font-normal font-inter leading-5 text-left text-[#0A0A0A]">
+            <TableHead className="px-2 max-md:hidden text-base font-normal font-inter leading-5 text-left text-black">
               Action
             </TableHead>
           </TableRow>
@@ -110,8 +110,8 @@ const AdminProductListTable = () => {
                   variant={"outline"}
                   className={` text-center font-medium ${
                     product.status === "Active"
-                      ? "border-[#6DC347]  text-[#6DC347]"
-                      : "border-[#525252] text-[#525252]"
+                      ? "border-green-500  text-green-500"
+                      : "border-primary text-primary"
                   }`}
                 >
                   {product.status}
